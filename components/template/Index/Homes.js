@@ -1,0 +1,15 @@
+import Home from '@/components/modules/Home';
+import React from 'react';
+import db from './../../../data/db.json';
+
+export default function Homes() {
+    return (
+        <>
+            <div className="homes">
+                {db.homes.slice(0,6).map((home) => (
+                    <Home key={home.id} {...home} />
+                ))}
+            </div>
+        </>
+    );
+}

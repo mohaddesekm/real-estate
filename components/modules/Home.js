@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default function Home({ id,title, img, roomCount, meterage, price }) {
+export default function Home({ id, title, img, roomCount, meterage, price }) {
     return (
         <>
             <div className="card">
@@ -11,29 +11,21 @@ export default function Home({ id,title, img, roomCount, meterage, price }) {
                         <use xlink:href="img/sprite.svg#icon-heart-full"></use>
                     </svg> */}
                 <div className="card__details">
-                    {/* <svg className="card__icon">
-                            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
-                        </svg> */}
+                    <span className="">
+                        <i className="fa fa-map-marker card__icon"></i>
+                    </span>
                     <p className="card__text">مالدیو</p>
-خب ببین من Layout رو ایجاد کردم، صفحه Home Page پروژه رو تکمیل کردم، و کامپوننت Home رو ایجاد کردم. برای این ها: نام برنچ؟ متن کامیت؟ توضیحات PR?
-
-                    {/* <svg className="card__icon">
-                            <use
-                                xlink:href="img/sprite.svg#icon-profile-male"
-                            ></use>
-                        </svg> */}
+                    <span className="">
+                        <i className="fa fa-user card__icon"></i>
+                    </span>
                     <p className="card__text">{roomCount} اتاق</p>
-
-                    {/* <svg className="card__icon">
-                        <use xlink:href="img/sprite.svg#icon-expand"></use>
-                    </svg> */}
-
+                    <span className="">
+                        <i className="fa fa-expand card__icon"></i>
+                    </span>
                     <p className="card__text">{meterage} متر مربع</p>
-
-                    {/* <svg className="card__icon">
-                        <use xlink:href="img/sprite.svg#icon-key"></use>
-                    </svg> */}
-
+                    <span className="">
+                        <i className="fa fa-key card__icon"></i>
+                    </span>
                     <p className="card__text">
                         {price.toLocaleString()} میلیون تومان
                     </p>

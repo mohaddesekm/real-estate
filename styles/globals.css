@@ -1823,7 +1823,6 @@ body {
 .pagination__item {
   width: 4rem;
   height: 4rem;
-  background-color: var(--color-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;

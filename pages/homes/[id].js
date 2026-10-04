@@ -70,7 +70,7 @@ export default function SingleHome() {
                 <div className="home-details-bottom">
                     <div className="home-details-description">
                         <p className="">توضیحات</p>
-                        <p className="">{home.desc}</p>
+                        <p className="">{home?.desc}</p>
                     </div>
                 </div>
             </div>
